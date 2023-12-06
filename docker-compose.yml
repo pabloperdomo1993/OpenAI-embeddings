@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  postgresdb:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=embeddings
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+#      - MYSQL_ROOT_PASSWORD=12345
+#      - MYSQL_DATABASE=test
+    ports:
+      - 5432:5432
